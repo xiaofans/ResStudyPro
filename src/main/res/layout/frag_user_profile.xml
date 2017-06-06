@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:paddingBottom="@dimen/general_subview_vertical_padding_large" app:focusable="true" app:focusableInTouchMode="true" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:backgroundColorArray="@array/page_bg_color">
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/AppWidget_Page_NoPadding">
+            <View style="@style/AppWidget_Divider_Horizontal" />
+            <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+                <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/page_horizontal_padding" app:text="@string/text_avatar" app:layout_alignParentLeft="true" app:layout_centerVertical="true" style="@style/AppWidget_Text_Secondary" />
+                <com.douban.book.reader.view.UserAvatarView app:id="@+id/user_avatar" app:layout_marginTop="@dimen/general_subview_vertical_padding_large" app:layout_marginBottom="@dimen/general_subview_vertical_padding_large" app:layout_centerHorizontal="true" style="@style/AppWidget_ImageView_UserAvatar_Large" />
+                <TextView app:id="@+id/btn_edit_avatar" app:paddingLeft="@dimen/general_subview_horizontal_padding_normal" app:paddingTop="@dimen/general_subview_vertical_padding_large" app:paddingBottom="@dimen/general_subview_vertical_padding_large" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:textColorArray="@array/light_blue" />
+            </RelativeLayout>
+            <View style="@style/AppWidget_Divider_Horizontal" />
+            <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+                <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/page_horizontal_padding" app:text="@string/text_nickname" app:layout_alignParentLeft="true" app:layout_centerVertical="true" style="@style/AppWidget_Text_Secondary" />
+                <TextView app:textStyle="bold" app:id="@+id/user_name" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/general_subview_vertical_padding_large" app:layout_marginBottom="@dimen/general_subview_vertical_padding_large" app:layout_centerHorizontal="true" />
+                <TextView app:id="@+id/btn_edit_nickname" app:paddingLeft="@dimen/general_subview_horizontal_padding_normal" app:paddingTop="@dimen/general_subview_vertical_padding_large" app:paddingBottom="@dimen/general_subview_vertical_padding_large" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:textColorArray="@array/light_blue" />
+            </RelativeLayout>
+            <View style="@style/AppWidget_Divider_Horizontal" />
+            <Button app:id="@+id/btn_logout" app:layout_marginTop="@dimen/general_subview_vertical_padding_large" app:text="@string/btn_logout" style="@style/AppWidget_Button_Secondary" />
+            <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+            <com.douban.book.reader.view.DoubanLogoView app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginTop="@dimen/general_subview_vertical_padding_large" />
+            <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/text_agreement" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/general_subview_vertical_padding_large" style="@style/AppWidget_Text_Secondary_Block" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

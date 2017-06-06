@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="delete">res/menu/delete.xml</menu>
+    <menu name="edit">res/menu/edit.xml</menu>
+    <menu name="edit_avatar">res/menu/edit_avatar.xml</menu>
+    <menu name="editor">res/menu/editor.xml</menu>
+    <menu name="feeds_chapter_updated">res/menu/feeds_chapter_updated.xml</menu>
+    <menu name="notification">res/menu/notification.xml</menu>
+    <menu name="reader">res/menu/reader.xml</menu>
+    <menu name="review_detail">res/menu/review_detail.xml</menu>
+    <menu name="share">res/menu/share.xml</menu>
+    <menu name="shelf">res/menu/shelf.xml</menu>
+    <menu name="shelf_context">res/menu/shelf_context.xml</menu>
+    <menu name="store">res/menu/store.xml</menu>
+    <menu name="store_search">res/menu/store_search.xml</menu>
+    <menu name="user_own">res/menu/user_own.xml</menu>
+    <menu name="works_list">res/menu/works_list.xml</menu>
+    <menu name="works_profile">res/menu/works_profile.xml</menu>
+</resources>

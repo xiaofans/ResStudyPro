@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/url_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="12sp" android:id="@+id/input_url" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberPassword|phone|date" />
+        <Button android:id="@+id/btn_go" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/store_url_bar_go_button">
+            <requestFocus />
+        </Button>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/layout_base" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.douban.book.reader.view.ReaderWebView android:id="@+id/webview" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

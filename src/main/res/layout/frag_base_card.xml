@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.douban.book.reader.view.card.CardView xmlns:android="http://schemas.android.com/apk/res-auto" reader:id="@+id/root" reader:descendantFocusability="afterDescendants" reader:layout_width="match_parent" reader:layout_height="match_parent" reader:backgroundColorArray="@array/page_bg_color" />

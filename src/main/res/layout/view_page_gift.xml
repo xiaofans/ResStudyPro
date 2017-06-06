@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" style="@style/AppWidget_Page">
+    <ImageView app:id="@+id/ic_gift" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="25dp" app:src="@drawable/ic_gift_wagtail" app:layout_centerHorizontal="true" app:autoDimInNightMode="true" />
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:paddingLeft="30dp" app:paddingRight="30dp" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/ic_gift" app:layout_centerHorizontal="true">
+        <TextView app:textSize="@dimen/general_font_size_large" app:id="@+id/recipient" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/AppWidget_Text_Content" />
+        <com.douban.book.reader.view.FlexibleScrollView app:id="@+id/gift_note_container" app:fadingEdge="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="20dp" app:layout_marginBottom="40dp" app:requiresFadingEdge="vertical">
+            <com.douban.book.reader.view.ParagraphView app:textSize="@dimen/general_font_size_large" app:id="@+id/gift_note" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/AppWidget_Text_Content_Block" />
+        </com.douban.book.reader.view.FlexibleScrollView>
+        <TextView app:textSize="@dimen/general_font_size_large" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/giver" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/AppWidget_Text_Content" />
+        <TextView app:textSize="@dimen/general_font_size_large" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/give_time" app:paddingTop="5dp" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/AppWidget_Text_Content" />
+    </LinearLayout>
+</RelativeLayout>

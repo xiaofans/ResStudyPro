@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <ImageView app:id="@+id/image_illus" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01" app:scaleType="centerCrop" app:autoDimInNightMode="true" />
+    <com.douban.book.reader.view.ParagraphView app:ellipsize="end" app:id="@+id/selection" app:visibility="gone" app:layout_width="match_parent" app:maxLines="3" style="@style/AppWidget_Text_Secondary_Block" />
+</merge>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <com.douban.book.reader.view.ParagraphView app:id="@+id/content_text" app:paddingBottom="@dimen/general_subview_vertical_padding_medium" app:visibility="gone" app:layout_width="match_parent" style="@style/AppWidget_Text_Content_Block" />
+    <ImageView app:id="@+id/expand_handle" app:paddingBottom="@dimen/general_subview_vertical_padding_medium" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/ic_expand" app:autoDimInNightMode="true" />
+</LinearLayout>

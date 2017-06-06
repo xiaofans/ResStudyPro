@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/general_font_size_normal" android:paddingTop="@dimen/general_subview_vertical_padding_normal" android:paddingBottom="@dimen/general_subview_vertical_padding_normal" android:button="0x0" android:text="@string/title_purchase_record" android:drawableRight="@drawable/check_mark_round" style="@style/AppWidget_List_Item" />

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="53" android:versionName="2.2.1" package="com.douban.book.reader" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.douban.book.reader.app.App_" android:description="@string/app_description" android:allowBackup="false" android:largeHeap="true">
+        <meta-data android:name="UMENG_APPKEY" android:value="4f83b0825270151e6d000105" />
+        <meta-data android:name="SPECIAL_EVENT" android:value="unknown" />
+        <meta-data android:name="Douban_Apikey" android:value="04962fc37ab154fa0dc28f4a7013feee" />
+        <meta-data android:name="Douban_Appname" android:value="read_android" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="403a4e798c1e4d6aa8f8e60a8c43fc9dd9479a1b" />
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.enable" android:value="true" />
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.penwindow.enable" android:value="true" />
+        <activity android:theme="@style/AppTheme_NoActionBar_Fullscreen_WindowBackground" android:name="com.douban.book.reader.activity.WelcomeActivity_" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.douban.book.reader" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ark" />
+                <data android:host="p" />
+                <data android:path="/column" />
+                <data android:path="/hermes" />
+                <data android:path="/store_index" />
+                <data android:path="/works_profile" />
+                <data android:path="/provider" />
+                <data android:path="/annotation" />
+                <data android:path="/works_kind" />
+                <data android:path="/subscriptions" />
+                <data android:path="/account" />
+                <data android:path="/redeem" />
+                <data android:path="/purchase" />
+                <data android:path="/store_home" />
+                <data android:path="/web_reader" />
+                <data android:path="/gift_pack_create" />
+                <data android:path="/gift_pack" />
+                <data android:path="/gift" />
+                <data android:path="/gift_list" />
+                <data android:path="/open_url" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="com.douban.book.reader" />
+                <action android:name="com.douban.book.reader.action.OPEN_BOOK" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="read.douban.com" />
+                <data android:pathPattern="/ebook/..*" />
+                <data android:pathPattern="/column/..*" />
+                <data android:pathPattern="/reader/ebook/..*" />
+                <data android:pathPattern="/reader/column/..*" />
+                <data android:pathPattern="/reader/column/..*/chapter/..*" />
+                <data android:pathPattern="/gift/..*" />
+                <data android:pathPattern="/gift/pack/..*" />
+                <data android:pathPrefix="/event/gift/new_year_2016" />
+                <data android:pathPattern="/review/..*" />
+                <data android:pathPattern="/rating/..*" />
+                <data android:pathPattern="/annotation/..*" />
+                <data android:path="/account/redeem" />
+                <data android:path="/account" />
+                <data android:pathPattern="/account/*" />
+                <data android:path="/app/download" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.douban.book.reader.activity.HomeActivity_" />
+        <activity android:name="com.douban.book.reader.activity.StoreSearchActivity_" />
+        <activity android:name="com.douban.book.reader.activity.GeneralFragmentDrawerActivity" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:name="com.douban.book.reader.activity.GeneralFragmentActivity" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:theme="@style/AppTheme_NoActionBar_Fullscreen_Translucent" android:name="com.douban.book.reader.activity.GeneralDialogFragmentActivity" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:theme="@style/AppTheme_NoTranslucentStatus" android:name="com.douban.book.reader.activity.ReaderActivity_" android:launchMode="singleTop" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ark" android:host="p" android:pathPrefix="/reader/" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar_Fullscreen_FadeInOut" android:name="com.douban.book.reader.activity.IllusDetailActivity" />
+        <activity android:theme="@style/AppTheme_NoActionBar_Fullscreen_Translucent" android:name="com.douban.book.reader.activity.WeiboAuthActivity_" />
+        <activity android:theme="@style/AppTheme_NoActionBar_Fullscreen_Translucent" android:name="com.douban.book.reader.activity.QQAuthActivity" />
+        <activity android:theme="@style/AppTheme_NoActionBar_Fullscreen_Translucent" android:name="com.douban.book.reader.activity.WeixinAuthActivity_" />
+        <activity-alias android:name="com.douban.book.reader.wxapi.WXEntryActivity" android:exported="true" android:targetActivity="com.douban.book.reader.activity.WeixinAuthActivity_" />
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="101082098" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" />
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alipay.sdk.auth.AuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <service android:label="ExecutePendingRequestService" android:name="com.douban.book.reader.service.ExecutePendingRequestsService_" />
+        <receiver android:label="NetworkConnection" android:name="com.douban.book.reader.receiver.ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.douban.book.reader.receiver.NotificationActionReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.douban.book.reader.action.OPEN_NOTIFICATION" />
+                <action android:name="com.douban.book.reader.action.DELETE_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.douban.book.reader.receiver.PushNotificationReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.6CeQ0YusXe8PK9EDseawX6" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="PUSH_APPID" android:value="6CeQ0YusXe8PK9EDseawX6" />
+        <meta-data android:name="PUSH_APPKEY" android:value="rQ0wMEa5bn8xCElwO2khN5" />
+        <meta-data android:name="PUSH_APPSECRET" android:value="o3vTrWbOxN8LSqMX5d0484" />
+        <service android:label="NotificationCenter" android:name="com.igexin.sdk.PushService" android:exported="true" android:process=":pushservice" />
+        <service android:label="NotificationCenterUser" android:name="com.igexin.sdk.PushServiceUser" android:exported="true" />
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.PushManagerReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

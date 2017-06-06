@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@+id/btn_read" android:layout_width="match_parent" android:layout_marginLeft="@dimen/page_horizontal_padding" android:layout_marginRight="@dimen/page_horizontal_padding" style="@style/AppWidget_Button_Caution" />
+</merge>

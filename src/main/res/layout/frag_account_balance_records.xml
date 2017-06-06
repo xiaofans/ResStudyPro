@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btn_deposit_record" app:paddingLeft="@dimen/page_horizontal_padding" app:paddingRight="@dimen/page_horizontal_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/title_deposit_record" app:drawableRight="@drawable/ic_arrow_right" app:colorizeDrawableEnabled="true" style="@style/AppWidget_Text_Clickable" />
+    <View style="@style/AppWidget_Divider_Horizontal" />
+    <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btn_purchase_record" app:paddingLeft="@dimen/page_horizontal_padding" app:paddingRight="@dimen/page_horizontal_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/title_purchase_record" app:drawableRight="@drawable/ic_arrow_right" app:colorizeDrawableEnabled="true" style="@style/AppWidget_Text_Clickable" />
+    <View style="@style/AppWidget_Divider_Horizontal" />
+    <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btn_coupon_record" app:paddingLeft="@dimen/page_horizontal_padding" app:paddingRight="@dimen/page_horizontal_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/title_redeem_amount_record" app:drawableRight="@drawable/ic_arrow_right" app:colorizeDrawableEnabled="true" style="@style/AppWidget_Text_Clickable" />
+    <View style="@style/AppWidget_Divider_Horizontal" />
+    <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btn_redemption_record" app:paddingLeft="@dimen/page_horizontal_padding" app:paddingRight="@dimen/page_horizontal_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/title_redeem_works_record" app:drawableRight="@drawable/ic_arrow_right" app:colorizeDrawableEnabled="true" style="@style/AppWidget_Text_Clickable" />
+    <View style="@style/AppWidget_Divider_Horizontal" />
+</LinearLayout>

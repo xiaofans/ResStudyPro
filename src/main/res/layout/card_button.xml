@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <Button app:id="@+id/button" app:textColorArray="@array/red" style="@style/AppWidget_Button_Secondary_Large" />
+</LinearLayout>

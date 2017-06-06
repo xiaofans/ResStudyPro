@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ImageView app:id="@+id/icon_bookmark_off" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/reader_horizontal_padding" app:src="@drawable/ic_bookmark_off" app:layout_alignParentTop="true" app:layout_alignParentRight="true" />
+    <TextView app:textSize="14dp" app:id="@+id/text_bookmark_guide" app:layout_marginTop="5dp" app:layout_marginRight="5dp" app:text="@string/text_pull_add_bookmark" app:layout_toLeftOf="@+id/icon_bookmark_off" app:layout_alignParentTop="true" style="@style/AppWidget_Text_Secondary" />
+    <ImageView app:id="@+id/bookmark_holy_egg" app:paddingBottom="30dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true" />
+    <FrameLayout app:id="@+id/pageview_placeholder" app:layout_width="match_parent" app:layout_height="match_parent" />
+    <ImageView app:id="@+id/icon_bookmark_on" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_bookmark_on" app:layout_alignTop="@+id/icon_bookmark_off" app:layout_alignRight="@+id/icon_bookmark_off" app:autoDimInNightMode="true" />
+    <TextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/text_bookmark_pagenum" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="-5dp" app:layout_marginTop="15dp" app:layout_marginRight="-5dp" app:singleLine="true" app:layout_alignLeft="@+id/icon_bookmark_off" app:layout_alignTop="@+id/icon_bookmark_off" app:layout_alignRight="@+id/icon_bookmark_off" app:textColorArray="@array/invert_text_color" />
+    <AbsoluteLayout app:id="@+id/absolutelayout" app:layout_width="match_parent" app:layout_height="match_parent" />
+</merge>

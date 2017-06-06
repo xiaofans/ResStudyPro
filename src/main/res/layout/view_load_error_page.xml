@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/img_bie" android:layout_width="UNKNOWN_DATA_0xc801" android:layout_height="UNKNOWN_DATA_0xc801" android:layout_marginTop="@dimen/general_subview_vertical_padding_large" android:scaleType="centerInside" />
+        <TextView android:textSize="@dimen/general_font_size_normal" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/hint_text" android:layout_marginTop="@dimen/general_subview_vertical_padding_large" android:text="@string/general_load_failed" style="@style/AppWidget_Text_Secondary" />
+        <Button android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_refresh" android:layout_marginTop="@dimen/general_subview_vertical_padding_medium" android:text="@string/btn_refresh" style="@style/AppWidget_Button_Secondary" />
+        <Button android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_to_shelf" android:layout_marginTop="@dimen/general_subview_vertical_padding_medium" android:text="@string/btn_to_shelf" style="@style/AppWidget_Button_Secondary" />
+    </LinearLayout>
+</merge>

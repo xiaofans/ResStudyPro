@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.douban.book.reader.view.BoxedWorksView_ android:id="@+id/gift_box" android:layout_width="UNKNOWN_DATA_0x3c01" android:layout_height="UNKNOWN_DATA_0x3c01" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/general_subview_horizontal_padding_normal" android:layout_weight="1.0">
+        <TextView android:id="@id/title" style="@style/AppWidget_Text_Title" />
+        <TextView android:id="@+id/message" android:layout_marginTop="@dimen/general_subview_vertical_padding_small" android:maxLines="2" style="@style/AppWidget_Text_Secondary_Block" />
+    </LinearLayout>
+</merge>

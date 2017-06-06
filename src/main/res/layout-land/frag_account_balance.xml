@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent">
+    <FrameLayout app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="6.0" app:backgroundColorArray="@array/page_highlight_bg_color">
+        <include layout="@layout/frag_account_balance_summary" />
+    </FrameLayout>
+    <FrameLayout app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="4.0">
+        <include layout="@layout/frag_account_balance_records" />
+    </FrameLayout>
+</LinearLayout>

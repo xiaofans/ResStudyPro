@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res-auto" app:duration="@integer/anim_duration" app:valueFrom="@string/path_arrow" app:valueTo="@string/path_drawer" app:valueType="pathType" app:propertyName="pathData" app:vc_valueType="2" />

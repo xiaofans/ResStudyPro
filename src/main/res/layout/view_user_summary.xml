@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/page_horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general_subview_vertical_padding_medium">
+        <com.douban.book.reader.view.UserAvatarView android:id="@+id/user_avatar" android:layout_marginLeft="2dp" android:layout_alignParentLeft="true" style="@style/AppWidget_ImageView_UserAvatar" />
+        <com.douban.book.reader.lib.view.BadgeTextView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/btn_notification" android:paddingLeft="@dimen/page_horizontal_padding" android:paddingRight="@dimen/page_horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_notification" android:layout_alignTop="@+id/user_avatar" android:layout_alignBottom="@+id/user_avatar" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Drawer_MenuItem_Small" />
+        <TextView android:ellipsize="middle" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/user_name" android:padding="0dp" android:layout_marginLeft="13dp" android:singleLine="true" android:layout_toLeftOf="@+id/btn_notification" android:layout_toRightOf="@+id/user_avatar" android:layout_alignTop="@+id/user_avatar" android:layout_alignBottom="@+id/user_avatar" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@style/AppWidget_Text_Title_Page" />
+        <TextView android:id="@+id/btn_login" android:paddingTop="@dimen/general_subview_vertical_padding_normal" android:paddingBottom="@dimen/general_subview_vertical_padding_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_marginLeft="13dp" android:text="@string/btn_login_or_register" android:layout_toRightOf="@+id/user_avatar" android:layout_centerVertical="true" style="@style/AppWidget_Text_Link_Large" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general_subview_vertical_padding_normal">
+        <View android:layout_marginLeft="@dimen/padding_left_navigation_sub_menu_item" style="@style/AppWidget_Divider_Horizontal" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2d01" android:layout_marginLeft="@dimen/padding_left_navigation_sub_menu_item">
+            <TextView android:textSize="@dimen/general_font_size_small" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/btn_account" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0" style="@style/Drawer_MenuItem_Small" />
+            <TextView android:textSize="@dimen/general_font_size_small" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/btn_gift" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:text="@string/btn_notification" android:layout_weight="1.0" style="@style/Drawer_MenuItem_Small" />
+        </LinearLayout>
+        <View android:layout_marginLeft="@dimen/padding_left_navigation_sub_menu_item" style="@style/AppWidget_Divider_Horizontal" />
+        <RelativeLayout android:id="@+id/btn_feeds" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Drawer_MenuItem">
+            <TextView android:paddingLeft="@dimen/padding_left_navigation_sub_menu_item" android:text="@string/btn_feeds" android:layout_centerVertical="true" style="@style/Drawer_MenuItem_Small" />
+            <TextView android:id="@+id/feeds_number" android:paddingRight="@dimen/page_horizontal_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AppWidget_Text_Secondary" />
+        </RelativeLayout>
+        <View android:layout_marginLeft="@dimen/padding_left_navigation_sub_menu_item" style="@style/AppWidget_Divider_Horizontal" />
+        <RelativeLayout android:id="@+id/btn_own" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Drawer_MenuItem">
+            <TextView android:paddingLeft="@dimen/padding_left_navigation_sub_menu_item" android:text="@string/btn_own" android:layout_centerVertical="true" style="@style/Drawer_MenuItem_Small" />
+            <TextView android:id="@+id/own_number" android:paddingRight="@dimen/page_horizontal_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AppWidget_Text_Secondary" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/author_block" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_marginLeft="@dimen/padding_left_navigation_sub_menu_item" style="@style/AppWidget_Divider_Horizontal" />
+            <RelativeLayout android:id="@+id/btn_composed" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Drawer_MenuItem">
+                <TextView android:paddingLeft="@dimen/padding_left_navigation_sub_menu_item" android:text="@string/btn_composed" android:layout_centerVertical="true" style="@style/Drawer_MenuItem_Small" />
+                <TextView android:id="@+id/composed_number" android:paddingRight="@dimen/page_horizontal_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AppWidget_Text_Secondary" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

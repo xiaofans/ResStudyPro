@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" reader:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" reader:orientation="horizontal" reader:paddingLeft="@dimen/page_horizontal_padding" reader:paddingTop="@dimen/general_subview_vertical_padding_small" reader:paddingBottom="@dimen/general_subview_vertical_padding_small" reader:layout_width="match_parent" reader:layout_height="wrap_content" reader:minHeight="50dp" reader:backgroundColorArray="@array/page_highlight_bg_color">
+    <com.douban.book.reader.view.WorksUGCView_ reader:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" reader:id="@+id/works_ugc" reader:layout_width="match_parent" reader:layout_height="wrap_content" />
+</LinearLayout>

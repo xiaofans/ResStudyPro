@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" reader:orientation="vertical" reader:layout_width="match_parent" reader:layout_height="wrap_content" reader:layout_alignParentBottom="true">
+    <LinearLayout reader:orientation="horizontal" reader:id="@+id/reader_bar_commands" reader:paddingTop="3dp" reader:layout_width="match_parent" reader:layout_height="UNKNOWN_DATA_0x2d01" reader:layout_alignParentBottom="true" reader:backgroundColorArray="@array/page_bg_color">
+        <TextView reader:id="@+id/command_btn_contents" reader:paddingTop="0dp" reader:paddingBottom="0dp" reader:layout_width="UNKNOWN_DATA_0x1" reader:layout_height="match_parent" reader:text="@string/command_btn_text_contents" reader:layout_weight="1.0" style="@style/AppWidget_Text_Clickable" />
+        <TextView reader:id="@+id/command_btn_notes" reader:paddingTop="0dp" reader:paddingBottom="0dp" reader:layout_width="UNKNOWN_DATA_0x1" reader:layout_height="match_parent" reader:text="@string/command_btn_text_contents" reader:layout_weight="1.0" style="@style/AppWidget_Text_Clickable" />
+        <TextView reader:id="@+id/command_btn_reviews" reader:paddingTop="0dp" reader:paddingBottom="0dp" reader:layout_width="UNKNOWN_DATA_0x1" reader:layout_height="match_parent" reader:text="@string/command_btn_text_contents" reader:layout_weight="1.0" style="@style/AppWidget_Text_Clickable" />
+        <View reader:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" reader:layout_height="UNKNOWN_DATA_0x1401" style="@style/AppWidget_Divider_Vertical" />
+        <TextView reader:id="@+id/command_btn_settings" reader:paddingLeft="@dimen/general_subview_horizontal_padding_medium" reader:paddingTop="0dp" reader:paddingRight="@dimen/general_subview_horizontal_padding_medium" reader:paddingBottom="0dp" reader:layout_width="wrap_content" reader:layout_height="match_parent" reader:text="@string/command_btn_text_contents" style="@style/AppWidget_Text_Clickable" />
+    </LinearLayout>
+    <com.douban.book.reader.view.panel.SeekBarView_ reader:id="@+id/seek_bar_panel" reader:layout_width="match_parent" reader:layout_height="wrap_content" reader:layout_marginBottom="-12.5dp" reader:layout_above="@+id/reader_bar_commands" />
+</RelativeLayout>

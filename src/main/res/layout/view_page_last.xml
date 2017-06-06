@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" reader:layout_width="match_parent" reader:layout_height="match_parent" style="@style/AppWidget_Page">
+    <LinearLayout reader:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" reader:orientation="vertical" reader:layout_width="match_parent" reader:layout_height="wrap_content">
+        <TextView reader:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" reader:id="@id/title" reader:layout_marginTop="100dp" reader:textColorArray="@array/blue" style="@style/AppWidget_Text_Title_Page" />
+        <LinearLayout reader:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" reader:orientation="vertical" reader:layout_width="match_parent" reader:layout_height="wrap_content" reader:layout_marginTop="@dimen/general_subview_vertical_padding_huge" reader:layout_marginBottom="@dimen/general_subview_vertical_padding_large">
+            <TextView reader:id="@+id/column_plan_info" reader:visibility="gone" reader:layout_width="wrap_content" reader:layout_height="wrap_content" style="@style/AppWidget_Text_Content" />
+            <TextView reader:id="@+id/text_purchase_tip" reader:visibility="gone" reader:layout_marginTop="@dimen/general_subview_vertical_padding_medium" reader:text="@string/last_page_view_message_purchase" style="@style/AppWidget_Text_Content" />
+            <TextView reader:id="@+id/text_subscription_info" reader:visibility="gone" reader:layout_width="wrap_content" reader:layout_height="wrap_content" reader:layout_marginTop="@dimen/general_subview_vertical_padding_medium" style="@style/AppWidget_Text_Secondary" />
+            <TextView reader:id="@+id/text_download_info" reader:visibility="gone" reader:layout_width="wrap_content" reader:layout_height="wrap_content" reader:layout_marginTop="@dimen/general_subview_vertical_padding_medium" reader:text="@string/last_page_view_message_download" style="@style/AppWidget_Text_Secondary" />
+        </LinearLayout>
+        <Button reader:id="@+id/btn_download" reader:visibility="gone" reader:layout_width="UNKNOWN_DATA_0x7f080056" reader:layout_marginTop="@dimen/general_subview_vertical_padding_medium" style="@style/AppWidget_Button_Primary" />
+        <LinearLayout reader:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" reader:orientation="vertical" reader:layout_width="wrap_content" reader:layout_height="wrap_content" reader:layout_marginTop="@dimen/general_subview_vertical_padding_medium">
+            <Button reader:id="@+id/btn_subscribe" reader:visibility="gone" reader:layout_width="UNKNOWN_DATA_0x7f080056" reader:text="@string/btn_subscribe" style="@style/AppWidget_Button_Secondary" />
+            <ProgressBar reader:id="@+id/subscribe_progress_bar" reader:visibility="gone" reader:layout_height="UNKNOWN_DATA_0x7f080051" style="@style/AppWidget_ProgressBar" />
+        </LinearLayout>
+        <Button reader:id="@+id/btn_purchase" reader:visibility="gone" reader:layout_width="UNKNOWN_DATA_0x7f080056" reader:layout_marginTop="@dimen/general_subview_vertical_padding_medium" style="@style/AppWidget_Button_Primary" />
+        <TextView reader:id="@+id/text_rating_tip" reader:visibility="gone" reader:layout_marginTop="@dimen/general_subview_vertical_padding_huge" reader:layout_marginBottom="@dimen/general_subview_vertical_padding_medium" reader:text="@string/last_page_view_message_rate" style="@style/AppWidget_Text_Content" />
+        <LinearLayout reader:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" reader:orientation="vertical" reader:id="@+id/rating_layout" reader:visibility="gone" reader:clickable="true" reader:layout_width="wrap_content" reader:layout_height="wrap_content" reader:layout_marginTop="@dimen/general_subview_vertical_padding_normal">
+            <RatingBar reader:id="@+id/rating_bar" reader:stepSize="1.0" style="@style/AppWidget_RatingBar_Large_Indicator" />
+        </LinearLayout>
+        <View reader:layout_width="match_parent" reader:layout_height="UNKNOWN_DATA_0x6401" />
+    </LinearLayout>
+</ScrollView>

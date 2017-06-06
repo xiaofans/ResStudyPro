@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="setting_pref">res/xml/setting_pref.xml</xml>
+</resources>

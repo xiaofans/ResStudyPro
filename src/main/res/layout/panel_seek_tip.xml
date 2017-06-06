@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/reader_overlay" app:background="#d1222222" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentTop="true">
+    <HorizontalScrollView app:id="@+id/reader_overlay_index_scroller" app:background="@color/reader_overlay_chapter_index_bg" app:scrollbars="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <LinearLayout app:orientation="horizontal" app:id="@+id/reader_overlay_index" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1801" />
+    </HorizontalScrollView>
+    <TextView app:textSize="10dp" app:textColor="#eeeeee" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/reader_overlay_guide" app:background="@color/reader_overlay_chapter_index_bg" app:paddingLeft="5dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1801" app:text="@string/text_reader_overlay_guide" app:drawableLeft="@drawable/ic_reader_overlay_guide" app:drawablePadding="5dp" app:textColorArray="0x0" />
+    <LinearLayout app:layout_width="match_parent" app:layout_height="match_parent">
+        <TextView app:textColor="#cccccc" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reader_overlay_progress" app:paddingLeft="5dp" app:paddingRight="5dp" app:layout_width="wrap_content" app:layout_height="match_parent" app:textColorArray="0x0" />
+        <TextView app:textSize="15dp" app:textColor="#ffffff" app:id="@+id/reader_overlay_title" app:padding="10dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:textColorArray="0x0" />
+    </LinearLayout>
+</LinearLayout>

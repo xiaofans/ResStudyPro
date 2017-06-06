@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:padding="@dimen/spv_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/spv_prefered_height" android:layout_weight="1.0">
+    <TextView android:textSize="@dimen/spv_font_size" android:textColor="@color/spv_text_secondary" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/spv_text" android:padding="@dimen/spv_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/spv_default_text" />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/spv_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/spv_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?unknown_attr_ref: 1010077" />
+        <TextView android:textSize="@dimen/spv_font_size" android:id="@id/spv_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spv_padding" android:text="@string/spv_default_progress_text" />
+    </LinearLayout>
+</LinearLayout>

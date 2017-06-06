@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item reader:icon="@drawable/ic_action_category" reader:id="@+id/action_works_kind" reader:title="@string/action_works_kind" reader:showAsAction="ifRoom" />
+    <item reader:icon="@drawable/ic_action_search" reader:id="@+id/action_search" reader:title="@string/action_search" reader:showAsAction="ifRoom" />
+</menu>

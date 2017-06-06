@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.douban.book.reader.view.ParagraphView app:textSize="@dimen/general_font_size_small" app:id="@+id/recipient" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/AppWidget_Text_Content" />
+    <com.douban.book.reader.view.FlexibleScrollView app:id="@+id/gift_note_container" app:fadingEdge="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/general_subview_vertical_padding_large" app:layout_marginBottom="@dimen/general_subview_vertical_padding_large" app:requiresFadingEdge="vertical">
+        <com.douban.book.reader.view.ParagraphView app:textSize="@dimen/general_font_size_normal" app:id="@+id/gift_note" app:layout_width="match_parent" app:layout_height="wrap_content" app:textColorArray="@array/blue" style="@style/AppWidget_Text_Content_Block" />
+    </com.douban.book.reader.view.FlexibleScrollView>
+    <com.douban.book.reader.view.ParagraphView app:textSize="@dimen/general_font_size_small" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/giver" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/AppWidget_Text_Content" />
+    <com.douban.book.reader.view.ParagraphView app:textSize="@dimen/general_font_size_small" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/give_time" app:paddingTop="5dp" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/AppWidget_Text_Content" />
+</merge>

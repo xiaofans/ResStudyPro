@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.douban.book.reader.view.store.WorksGridView_ android:id="@+id/top_works" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_more" android:paddingLeft="@dimen/general_subview_vertical_padding_large" android:paddingRight="@dimen/general_subview_vertical_padding_large" android:visibility="gone" android:layout_marginTop="@dimen/general_subview_vertical_padding_large" style="@style/AppWidget_Button_Small" />
+</merge>

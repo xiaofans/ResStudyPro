@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <ImageView app:id="@+id/thumbnail" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x5001" app:layout_marginTop="@dimen/general_subview_vertical_padding_medium" app:scaleType="centerCrop" app:layout_alignParentTop="true" app:autoDimInNightMode="true" />
+    <com.douban.book.reader.view.ParagraphView app:ellipsize="end" app:id="@+id/abstract_text" app:layout_width="match_parent" app:layout_marginTop="@dimen/general_subview_vertical_padding_medium" app:maxLines="3" style="@style/AppWidget_Text_Content_Block" />
+    <TextView app:id="@+id/create_date" app:layout_width="match_parent" app:layout_marginTop="@dimen/general_subview_vertical_padding_small" style="@style/AppWidget_Text_Secondary" />
+    <TextView app:textSize="@dimen/general_font_size_tiny" app:id="@+id/data_uuid" app:visibility="gone" style="@style/AppWidget_Text_Secondary" />
+</merge>

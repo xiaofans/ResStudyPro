@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <RelativeLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:paddingLeft="@dimen/page_horizontal_padding" app:paddingTop="@dimen/general_subview_vertical_padding_medium" app:paddingRight="@dimen/page_horizontal_padding" app:paddingBottom="@dimen/general_subview_vertical_padding_medium" app:layout_width="match_parent" app:layout_height="wrap_content" app:backgroundColorArray="@array/page_highlight_bg_color">
+        <TextView app:textSize="@dimen/general_font_size_large" app:id="@+id/price" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:textColorArray="@array/red" />
+        <TextView app:textSize="@dimen/general_font_size_large" app:id="@+id/title_purchase" app:layout_marginRight="@dimen/general_subview_horizontal_padding_normal" app:layout_toLeftOf="@+id/price" app:layout_alignTop="@+id/price" app:layout_alignParentLeft="true" style="@style/AppWidget_Text_Title" />
+        <TextView app:textSize="@dimen/general_font_size_medium" app:id="@+id/works_info" app:layout_marginTop="@dimen/general_subview_vertical_padding_normal" app:layout_below="@+id/title_purchase" style="@style/AppWidget_Text_Secondary_Block" />
+    </RelativeLayout>
+    <View style="@style/AppWidget_Divider_Horizontal" />
+    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/layout_purchase_secretly" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/general_subview_vertical_padding_large">
+        <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/general_subview_padding_small" app:text="@string/btn_secretly" style="@style/AppWidget_Text_Secondary" />
+        <android.support.v7.widget.SwitchCompat app:id="@+id/btn_purchase_secretly" app:layout_width="wrap_content" app:layout_height="wrap_content" app:theme="@style/AppTheme_Widget_Switch" />
+    </LinearLayout>
+    <Button app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btn_purchase" app:layout_marginTop="@dimen/general_subview_vertical_padding_large" app:layout_marginBottom="@dimen/general_subview_vertical_padding_large" style="@style/AppWidget_Button_Primary" />
+</LinearLayout>

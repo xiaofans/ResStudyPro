@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" reader:layout_width="match_parent" reader:layout_height="match_parent">
+    <FrameLayout reader:id="@+id/bottom_frame" reader:paddingBottom="20dp" reader:layout_width="match_parent" reader:layout_height="UNKNOWN_DATA_0x7f080017" reader:layout_alignParentBottom="true">
+        <LinearLayout reader:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" reader:orientation="vertical" reader:id="@+id/layout_loading" reader:layout_width="match_parent" reader:layout_height="wrap_content">
+            <ProgressBar reader:layout_width="wrap_content" reader:layout_height="wrap_content" reader:indeterminateDrawable="@drawable/drawable_progress_no_bird" />
+        </LinearLayout>
+        <LinearLayout reader:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" reader:orientation="vertical" reader:id="@+id/layout_retry" reader:visibility="gone" reader:layout_width="match_parent" reader:layout_height="wrap_content">
+            <TextView reader:textColor="@color/white" reader:id="@+id/message" reader:paddingLeft="@dimen/page_horizontal_padding" reader:paddingRight="@dimen/page_horizontal_padding" reader:layout_width="wrap_content" reader:layout_height="wrap_content" reader:textColorArray="0x0" style="@style/AppWidget_Text_Secondary" />
+            <Button reader:id="@+id/btn_retry" reader:layout_marginTop="15dp" reader:text="@string/button_retry" style="@style/AppWidget_Button_Primary" />
+        </LinearLayout>
+        <ImageView reader:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" reader:id="@+id/special_logo" reader:padding="15dp" reader:visibility="gone" reader:layout_width="wrap_content" reader:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

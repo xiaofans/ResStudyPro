@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/reader_btn_jump" android:background="@drawable/btn_jump_bg_day" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1701" android:layout_height="UNKNOWN_DATA_0x2401" android:layout_marginBottom="40dp">
+        <ImageView android:id="@+id/reader_btn_jump_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_to_prev_day" />
+    </LinearLayout>
+    <com.douban.book.reader.view.IndexedSeekBar android:id="@+id/reader_seek_bar" android:paddingLeft="0dp" android:paddingTop="2dp" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="30dp" android:minHeight="30dp" />
+</LinearLayout>

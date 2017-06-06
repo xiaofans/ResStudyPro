@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.douban.book.reader.lib.view.CropImageView app:id="@id/image" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3201" app:adjustViewBounds="false" app:autoDimInNightMode="true" />
+    <Button app:id="@+id/button" app:layout_width="wrap_content" app:layout_marginRight="@dimen/page_horizontal_padding" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:textColorArray="@array/red" style="@style/AppWidget_Button_Secondary" />
+</merge>

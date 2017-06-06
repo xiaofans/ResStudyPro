@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@+id/input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_redeem_input">
+        <requestFocus />
+    </EditText>
+    <Button android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_confirm" android:layout_marginTop="@dimen/general_subview_vertical_padding_large" android:text="@string/btn_redeem" style="@style/AppWidget_Button_Primary_Large" />
+</merge>

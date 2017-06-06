@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_base" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AppWidget_Page"
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/text_works_id" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:hint="请输入id" android:layout_weight="1.0" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+            <Button android:id="@+id/btn_open_works" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开书籍" />
+            <Button android:id="@+id/btn_open_column" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开专栏" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="
+或者可以选择：" />
+    </LinearLayout>
+</ScrollView>
